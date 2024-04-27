@@ -14,8 +14,9 @@ while True:
         num = int(input('Введите номер элемента: '))
         if num != 0:
             try:
-                how_many_items = int(input('Количество: '))
-                goods[str(num)][1] += how_many_items
+                if str(num) in goods:
+                    how_many_items = int(input('Количество: '))
+                    goods[str(num)][1] += how_many_items
             except ValueError:
                 print()
                 print('Введите корректное значение: ')
