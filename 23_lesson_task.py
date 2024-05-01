@@ -19,12 +19,12 @@ while True:
                     goods[str(num)][1] += how_many_items
             except ValueError:
                 print()
-                print('Введите корректное значение: ')
+                print('Введите корректное значение.')
         else:
             break
     except ValueError:
         print()
-        print('Введите корректное значение: ')
+        print('Введите корректное значение.')
 
 for key in goods:
     print(key, ') ', goods[key][0], ' - ', goods[key][1], ' шт.', ' по ', goods[key][2], ' руб. ', sep='')
