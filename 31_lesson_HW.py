@@ -7,8 +7,8 @@ def calc_average(fn):
         message = message[0: -2]
 
         print('Сумма', message, '=', fn(*args))
-        average = fn(*args) / len(args)
-        print('Среднее арифметическое', message, '=', average)
+        return fn(*args) / len(args)
+        # print('Среднее арифметическое', message, '=', average)
 
     return wrap
 
@@ -18,4 +18,4 @@ def summa(*args):
     return sum(args)
 
 
-summa(2, 3, 3, 4)
+print('Среднее арифметическое чисел', summa(2, 3, 3, 4))
