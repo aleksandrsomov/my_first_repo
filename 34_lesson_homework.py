@@ -4,7 +4,7 @@ for i in range(len(person_fullname)):
     if i > 0:
         person_fullname[i] = person_fullname[i][:1] + '.'
 
-# print(person_fullname)
+print(person_fullname)
 
 FIO = ' '.join(person_fullname)
 print(FIO)
